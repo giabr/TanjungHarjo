@@ -868,6 +868,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info {
   color: #333333;
+  display: inline-block;
 }
 
 #contact .info i {
@@ -889,6 +890,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .social-links {
   padding-bottom: 20px;
+  float: left;
 }
 
 #contact .social-links a {
