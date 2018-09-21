@@ -123,12 +123,15 @@ section .section-title {
 
 .backside .card a:hover {
     font-size: 18px;
+    color: #A7E718 !important;
+}
+
+.frontside .card .card-title{
     color: #1a69b8 !important;
 }
 
-.frontside .card .card-title,
 .backside .card .card-title {
-    color: #1a69b8 !important;
+    color: #A7E718 !important;
 }
 
 .frontside .card .card-body img {
