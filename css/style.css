@@ -219,8 +219,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #A7E718;
+  border: 2px solid #A7E718;
 }
 
 /*--------------------------------------------------------------
@@ -555,11 +555,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-direction: column;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid #2dc997;
+  border: 2px solid #A7E718;
 }
 
 #about .about-container .icon-box .icon i {
-  color: #2dc997;
+  color: #A7E718;
   font-size: 24px;
 }
 
