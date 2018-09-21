@@ -219,10 +219,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
+  background: #1A69B8;
+  border: 2px solid #1A69B8;
+}
+
+#hero #article-button:hover {
   background: #A7E718;
   border: 2px solid #A7E718;
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
