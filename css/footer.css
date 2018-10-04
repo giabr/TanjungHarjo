@@ -5,7 +5,7 @@ section {
 }
 
 section .section-title {
-    text-align: center;
+/*    text-align: center;*/
     color: #2dc997;
     margin-bottom: 50px;
 /*    text-transform: uppercase;*/
