@@ -1,0 +1,31 @@
+#header-home-blog{
+	font-size: 50px; 
+	color: #111;
+	font-family: 'Satisfy', cursive;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+
+.header-post {
+	font-family: 'Satisfy', cursive;
+	font-size: 30px; 
+	color: #111;
+	font-weight: 700;
+}
+
+.green{
+	/*hijau*/
+	color: #A7E718;
+}
+
+.blue{
+	/*biru*/
+	color: #1A69B8;
+}
+
+.img-post-size{
+	height: 300px;
+	width: 700px;
+	overflow: hidden;
+	display: block;
+}
