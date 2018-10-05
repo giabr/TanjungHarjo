@@ -8,12 +8,24 @@
   text-align: center
 }
 
+.box2t li a {
+  text-align: center;
+}
+
 .box10:after, .box10:before, .box1:after, .box1:before, .box2 .inner-content:after, .box3:after, .box3:before, .box4:before, .box5:after, .box5:before, .box6:after, .box7:after, .box7:before {
+  content: ""
+}
+
+.box2t .inner-content:after {
   content: ""
 }
 
 .box1, .box11, .box12, .box13, .box14, .box16, .box17, .box18, .box2, .box20, .box21, .box3, .box4, .box5, .box5 .icon li a, .box6, .box7, .box8 {
   overflow: hidden
+}
+
+.box2t {
+  overflow: hidden;
 }
 
 .box1 .title, .box10 .title, .box4 .title, .box7 .title {
@@ -135,6 +147,10 @@ body {
   border-radius: 50%
 }
 
+.box2t .icon li a {
+  border-radius: 50%
+}
+
 .box1 .icon li a:hover {
   color: #fff;
   box-shadow: 0 0 10px #000 inset, 0 0 0 3px #fff
@@ -151,12 +167,31 @@ body {
   position: relative;
 }
 
+.box2t {
+  position: relative;
+}
+
 .box2 img {
   width: 100%;
   height: auto
 }
 
+.box2t img {
+  width: 100%;
+  height: auto
+}
+
 .box2 .box-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%)
+}
+
+.box2t .box-content {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -177,7 +212,23 @@ body {
   transition: all .5s ease 0s
 }
 
+.box2t .box-content:after, .box2t .box-content:before, .box2t:after, .box2t:before {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all .5s ease 0s
+}
+
 .box2:before {
+  background: linear-gradient(45deg, rgba(0, 0, 0, .2) 49%, transparent 50%);
+  left: -100%
+}
+
+.box2t:before {
   background: linear-gradient(45deg, rgba(0, 0, 0, .2) 49%, transparent 50%);
   left: -100%
 }
@@ -187,7 +238,20 @@ body {
   left: 160%
 }
 
+.box2t:after {
+  background: linear-gradient(45deg, transparent 49%, rgba(0, 0, 0, .2) 50%);
+  left: 160%
+}
+
 .box2 .box-content:after, .box2 .box-content:before {
+  width: 65%;
+  height: 65%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, .3) 49%, transparent 50%);
+  left: -100%;
+  transition-delay: .1s
+}
+
+.box2t .box-content:after, .box2t .box-content:before {
   width: 65%;
   height: 65%;
   background: linear-gradient(45deg, rgba(0, 0, 0, .3) 49%, transparent 50%);
@@ -204,7 +268,24 @@ body {
   left: 50%
 }
 
+.box2t:hover .box-content:after, .box2t:hover .box-content:before, .box2t:hover:after, .box2t:hover:before {
+  left: 50%
+}
+
 .box2 .inner-content {
+  width: 50%;
+  height: 50%;
+  color: #fff;
+  padding: 40px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all .3s ease .2s
+}
+
+.box2t .inner-content {
   width: 50%;
   height: 50%;
   color: #fff;
@@ -228,7 +309,23 @@ body {
   transform: translate(-50%, -50%) rotate(45deg)
 }
 
+.box2t .inner-content:after {
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 201, 151, .8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%) rotate(45deg)
+}
+
 .box2:hover .inner-content {
+  transform: translate(-50%, -50%) scale(1);
+  transition: all .3s ease 0s
+}
+
+.box2t:hover .inner-content {
   transform: translate(-50%, -50%) scale(1);
   transition: all .3s ease 0s
 }
@@ -240,7 +337,21 @@ body {
   margin-bottom: 5px
 }
 
+.box2t .title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px
+}
+
 .box2 .post {
+  display: block;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-bottom: 7px
+}
+
+.box2t .post {
   display: block;
   font-size: 14px;
   text-transform: capitalize;
@@ -259,7 +370,19 @@ body {
   transition: all .3s ease 0s
 }
 
+.box2t .icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: rotateY(360deg) scale(0);
+  transition: all .3s ease 0s
+}
+
 .box2:hover .icon {
+  transform: rotateY(0) scale(1)
+}
+
+.box2t:hover .icon {
   transform: rotateY(0) scale(1)
 }
 
@@ -268,7 +391,23 @@ body {
   margin: 0 3px
 }
 
+.box2t .icon li {
+  display: inline-block;
+  margin: 0 3px
+}
+
 .box2 .icon li a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background: #fff;
+  font-size: 16px;
+  color: #505050;
+  transition: all .3s ease 0s
+}
+
+.box2t .icon li a {
   display: block;
   width: 35px;
   height: 35px;
@@ -285,8 +424,20 @@ body {
   color: #ff4f4f
 }
 
+.box2t .icon li a:hover {
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, .5);
+  background: #fff;
+  color: #ff4f4f
+}
+
 @media only screen and (max-width:990px) {
   .box2 {
+    margin-bottom: 30px
+  }
+}
+
+@media only screen and (max-width:990px) {
+  .box2t {
     margin-bottom: 30px
   }
 }
@@ -297,6 +448,16 @@ body {
   }
 
   .box2 .title {
+    font-size: 16px
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .box2t .inner-content {
+    padding: 25px 0
+  }
+
+  .box2t .title {
     font-size: 16px
   }
 }
