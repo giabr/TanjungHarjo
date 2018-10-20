@@ -727,7 +727,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 #katalog .katalog-item:hover img {
   top: -30px;
 }
-
+#berminat button{
+  border: none; 
+  max-height: 50px
+  font-size: inherit;
+  width: auto;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(26, 105, 184);
+}
+#berminat button:hover{
+  background-color: #A7E718;
+}
+#berminat a{
+  font-size: 15px;
+  color: white;
+}
+#berminat p{
+  font-size: 30px;
+}
 /* Struktur Section
 --------------------------------*/
 #struktur {

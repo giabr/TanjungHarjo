@@ -1,28 +1,42 @@
-
+p{
+  font-family: 'Montserrat', sans-serif;
+}
 
 #header-home-blog{
 	font-size: 50px; 
 	color: #111;
-	font-family: 'Satisfy', cursive;
-	font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+/*	font-family: 'Satisfy', cursive;*/
+/*	font-weight: 700;*/
 	margin-bottom: 70px;
 }
-
+#explore{
+  font-size: 50px; 
+  color: #111;
+  font-family: 'Satisfy', cursive;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
 .header-post {
-	font-family: 'Satisfy', cursive;
-	font-size: 30px; 
+/*	font-family: 'Satisfy', cursive;*/
+  font-family: 'Open Sans', sans-serif;
+	font-size: 25px; 
 	color: #111;
 	font-weight: 700;
 }
+.header-post:hover{
+  color: #A7E718;
+  transition: color 0.3s;
+}
 .btn-baca {
 	background-color: #1A69B8 !important;
-	color: #FFFF;
 }
 .btn-baca:hover {
 	background-color: #A7E718 !important;
-	color: #FFFF;
 }
-
+.btn-baca a{
+  color: white;
+}
 .green{
 	/*hijau*/
 	color: #A7E718;
