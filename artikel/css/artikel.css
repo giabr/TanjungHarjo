@@ -2,6 +2,10 @@ p{
   font-family: 'Montserrat', sans-serif;
 }
 
+img .hover:hover{
+  opacity: 30%;
+}
+
 #header-home-blog{
 	font-size: 50px; 
 	color: #111;
